@@ -68,39 +68,39 @@ gulp.task('copy', () =>
     .pipe($.size({title: 'copy'}))
 );
 
-// Compile and automatically prefix stylesheets
-gulp.task('styles', () => {
-  const AUTOPREFIXER_BROWSERS = [
-    'ie >= 10',
-    'ie_mob >= 10',
-    'ff >= 30',
-    'chrome >= 34',
-    'safari >= 7',
-    'opera >= 23',
-    'ios >= 7',
-    'android >= 4.4',
-    'bb >= 10'
-  ];
-
-  // For best performance, don't add Sass partials to `gulp.src`
-  return gulp.src([
-    'app/styles/**/*.scss',
-    'app/styles/**/*.css'
-  ])
-    .pipe($.newer('.tmp/styles'))
-    .pipe($.sourcemaps.init())
-    .pipe($.sass({
-      precision: 10
-    }).on('error', $.sass.logError))
-    .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
-    .pipe(gulp.dest('.tmp/styles'))
-    // Concatenate and minify styles
-    .pipe($.if('*.css', $.cssnano()))
-    .pipe($.size({title: 'styles'}))
-    .pipe($.sourcemaps.write('./'))
-    .pipe(gulp.dest('dist/styles'))
-    .pipe(gulp.dest('.tmp/styles'));
-});
+// // Compile and automatically prefix stylesheets
+// gulp.task('styles', () => {
+//   const AUTOPREFIXER_BROWSERS = [
+//     'ie >= 10',
+//     'ie_mob >= 10',
+//     'ff >= 30',
+//     'chrome >= 34',
+//     'safari >= 7',
+//     'opera >= 23',
+//     'ios >= 7',
+//     'android >= 4.4',
+//     'bb >= 10'
+//   ];
+//
+//   // For best performance, don't add Sass partials to `gulp.src`
+//   return gulp.src([
+//     'app/styles/**/*.scss',
+//     'app/styles/**/*.css'
+//   ])
+//     .pipe($.newer('.tmp/styles'))
+//     .pipe($.sourcemaps.init())
+//     .pipe($.sass({
+//       precision: 10
+//     }).on('error', $.sass.logError))
+//     .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
+//     .pipe(gulp.dest('.tmp/styles'))
+//     // Concatenate and minify styles
+//     .pipe($.if('*.css', $.cssnano()))
+//     .pipe($.size({title: 'styles'}))
+//     .pipe($.sourcemaps.write('./'))
+//     .pipe(gulp.dest('dist/styles'))
+//     .pipe(gulp.dest('.tmp/styles'));
+// });
 
 // Concatenate and minify JavaScript. Optionally transpiles ES2015 code to ES5.
 // to enable ES2015 support remove the line `"only": "gulpfile.babel.js",` in the
@@ -156,7 +156,7 @@ gulp.task('html', () => {
 gulp.task('clean', () => del(['.tmp', 'dist/*', '!dist/.git'], {dot: true}));
 
 // Watch files for changes & reload
-gulp.task('serve', ['scripts', 'styles'], () => {
+gulp.task('serve', ['scripts'], () => {
   browserSync({
     notify: false,
     // Customize the Browsersync console logging prefix
@@ -196,8 +196,8 @@ gulp.task('serve:dist', ['default'], () =>
 // Build production files, the default task
 gulp.task('default', ['clean'], cb =>
   runSequence(
-    'styles',
-    ['lint', 'html', 'scripts', 'images', 'copy'],
+    // 'styles',
+    ['lint', 'html', 'scripts', 'copy'],
     'generate-service-worker',
     cb
   )
