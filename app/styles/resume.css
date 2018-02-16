@@ -1,18 +1,18 @@
 html,
 body {
   display: flex;
-  justify-content: center; }
+  flex-direction: column;
+  align-items: center;
+  background-color: #EEEEEE; }
 
 header {
-  margin: 0;
   padding-top: 10px;
   padding-bottom: 10px; }
 
-.nav-bar {
-  padding: 1.5vw;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  margin: 2px;
-  color: black; }
+.card {
+  background-color: #EEEEEE;
+  width: 90vw;
+  height: 90vh;
+  border: solid #F5F5F5 10px; }
 
 /*# sourceMappingURL=resume.css.map */
