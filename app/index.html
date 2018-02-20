@@ -1,65 +1,196 @@
-<!doctype html>
-<html lang="">
+<html>
+
 <head>
   <title>Shane Reeve</title>
-  <link rel="stylesheet" type="text/css" href="styles/resume-style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles/resume.css">
 </head>
+
+
 <body>
+<a name="home"></a>
 <header>
-  <a class="info" herf=""><b>About</b></a>
 
-  <a class="info" herf=""><b>Resume</b></a>
-
-  <a class="info" herf=""><b>Hobbies</b></a>
+  <button onClick="location.href='index.html#home'" class="btn btn-outline-dark">Home</button>
+  <button onClick="location.href='index.html#about'" class="btn btn-outline-dark">About</button>
+  <button onClick="location.href='index.html#skills'" class="btn btn-outline-dark">Skills</button>
+  <button onClick="location.href='index.html#education'" class="btn btn-outline-dark">Education</button>
+  <button onClick="location.href='index.html#employment'" class="btn btn-outline-dark">Employment</button>
+  <!--<button onClick="location.href='index.html#portfolio'" class="btn btn-outline-dark">Portfolio</button>-->
+  <!--<button onClick="location.href='index.html#blog'" class="btn btn-outline-dark">Blog</button>-->
+  <!--<button onClick="location.href='index.html#contact'" class="btn btn-outline-dark">Contact</button>-->
 </header>
 <main>
+
+  <div class="card" id="home">
+    <div>
+      <img src="head-shot.jpg" name="head-shot">
+    </div>
+    <div>
+      <div class="text-box">
+        <h2>Hello!<br>My Name is<br><b>Shane Reeve</b></h2>
+        <h3 id="intro">New to the Web Development World,<br>Excited to learn and grow.</h3>
+      </div>
+    </div>
+  </div>
+
+
+  <a name="about"></a>
+  <div class="space">
+  </div>
+
   <div class="card">
     <div>
-      <img class="head-shot" src="head-shot.jpg" alt="head-shot">
+      <div class="text-box" id="about-card">
+        <div id="about">
+          <h4><b>_about</b></h4>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <td>Name:</td>
+              <td>Shane Reeve</td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td>Shanereeve@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td>(801) 419-9702</td>
+            </tr>
+            <tr>
+              <td>Date of Birth:</td>
+              <td>April 13, 1994</td>
+            </tr>
+            <tr>
+              <td>Nationaliy:</td>
+              <td>United States</td>
+            </tr>
+          </table>
+          <div id="resume">
+            <button onClick="" class="btn btn-outline-dark" id="resume-button">Download Resume</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="business-info">
-      <h1 class="name">Shane T. Reeve</h1>
-      <h2>Web Developer and Entrepreneur</h2>
-      <table>
-        <tr>
-          <th>AGE</th>
-          <td>23</td>
-        </tr>
-        <tr>
-          <th>ADDRESS</th>
-          <td>13867 s Arrow Creek Dr.</td>
-        </tr>
-        <tr>
-          <th>E-MAIL</th>
-          <td>Shanereeve@gmail.com</td>
-        </tr>
-        <tr>
-          <th>PHONE</th>
-          <td>(801) 419 - 9702</td>
-        </tr>
-        <tr>
-          <th>FREELANCE</th>
-          <td>Starting May 16, 2018</td>
-        </tr>
-      </table>
+
+    <div class="short-history">
+      <div><h2>Short History</h2></div>
+      <div>
+        <p class="n-font">
+          I'm a Full Stack Web-Developer form Salt Lake City, Utah. I have completed a coding bootcamp from Helio
+          training.
+          I also have a bachelor's degree in Mechanical Engineering from the University of Utah.
+        </p>
+        <p class="n-font2">
+          At Helio, we learned to work with each other to overcome problems and use version control to track and
+          improve projects. We created several project to portray useful skills that we have leaved.
+        </p>
+      </div>
     </div>
   </div>
-  <div class="card" id="resume">
+
+  <a name="skills" ></a>
+  <div class="space">
+  </div>
+  <div class="card" id="skills">
+    <div><h4 class="_skills"><b>_Skills</b></h4></div>
+    <div id="skills2">
+      <div class="text-box" id="skills3">
+        <div><h2>Technical Skills</h2></div>
+        <ul>
+          <li class="li-font">HTML5</li>
+          <li class="li-font">CSS</li>
+          <li class="li-font">Javascript*</li>
+          <li class="li-font">GetHub</li>
+        </ul>
+      </div>
+      <div class="text-box" id="skills4">
+        <div><h2>Artistic Skills</h2></div>
+        <ul>
+          <li class="li-font">Photoshop</li>
+          <li class="li-font">Illustrator</li>
+          <li class="li-font">Photography</li>
+          <li class="li-font">Lightroom</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <a name="education"></a>
+  <div class="space">
+  </div>
+
+  <div class="card" id="education">
     <div>
-      <h1>Resume</h1>
+    <h4 class="_skills"><b>_Education</b></h4>
     </div>
-    <div class="">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores, blanditiis consequuntur distinctio
-        dolor fugit illo ipsum laborum nostrum officiis omnis praesentium rem repellendus sed sequi sit soluta! Dolor,
-        voluptates.
-      </p>
+    <div>
+      <ul id="ed">
+        <li>Full Stack Web-Development Bootcamp from Helio Training</li>
+        <li>Bachelor's of Science in Mechanical Engineering from <br>University of Utah</li>
+        <li>Photography Proficiency Certificate for Shaw Academy</li>
+        <li>Lightroom Proficiency Certificate for Shaw Academy</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <a name="employment"></a>
+  <div class="space">
+  </div>
+  <div class="card" id="employ">
+    <div>
+      <h4 class="_skills"><b>_Employment</b></h4>
+
+    </div>
+    <div>
+      <h3><b>Operations Manager</b> at Kinex Connect</h3>
+      <p class="n-font-employ">I managed a group of 7 Mechanical Engineering students from the University of Utah.
+        I had to organize productions to optimize work flows. I created testing and quality standards and trained
+        all new employees on manufacturing operations</p>
+      <h3><b>Development Engineer</b> at Method Therapeutic Solutions</h3>
+      <p class="n-font-employ">I designed and developed improvements to a knee therapy device with 2 coworkers.
+      I manufactored unique parts from technical drawing using raw material. I modified/enhanced photos for advertisement
+      and a user's manual. I also devised test criteria for device quality standards.</p>
     </div>
   </div>
 
+  <!--<a name="portfolio"></a>-->
+  <!--<div class="space">-->
+  <!--</div>-->
+  <!--<div class="card">-->
 
+  <!--</div>-->
+
+  <!--<a name="blog"></a>-->
+  <!--<div class="space">-->
+  <!--</div>-->
+  <!--<div class="card">-->
+
+  <!--</div>-->
+
+  <!--<a name="contact"></a>-->
+  <!--<div class="space">-->
+  <!--</div>-->
+  <!--<div class="card">-->
+
+  <!--</div>-->
 </main>
 <footer>
 
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

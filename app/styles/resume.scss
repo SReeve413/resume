@@ -1,6 +1,7 @@
 $bg-color: #EEEEEE; // grey 200
-$card-boarder: #FFFFFF; // grey 50
-$card-bg: #F5F5F5; // grey 100
+$card-boarder: #BDBDBD; // grey 400
+$card-bg: #FFFFFF; // white
+$blue-text: #0288D1; // light blue 700
 
 html,
 body{
@@ -8,29 +9,166 @@ body{
   flex-direction:column;
   align-items: center;
   background-color: $bg-color;
-
 }
 
 header{
   //margin: 10px;
   padding-top: 10px;
   padding-bottom:10px;
+  margin-bottom: 5px;
 }
 .card{
-  background-color: $bg-color;
+  background-color: $card-bg;
   width: 90vw;
-  height: 90vh;
-  border: solid $card-bg 10px;
+  height:52vw;
+  border: solid $card-boarder 8px;
+  margin-bottom: 2vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+}
+.space{
+  height:3vw;
 }
 
-//.nav-bar{
-//padding: 1.5vw;
-//  padding-top: 1vh;
-//  padding-bottom: 1vh;
-//  margin: 2px;
-//  color:black;
-// // background-color:transparent;
-//
-//
-//}
+.head-shot{
+ height:40vw;
+  width: 40vw;
+  margin:2vw;
+}
+[class="text-box"]{
+  display:flex;
+  flex-flow: column;
+ // background-color: red;
+  height:40vw;
+  width: 40vw;
+  margin:2vw;
+  justify-content:center;
+}
 
+h2{
+  font-size: 5vw;
+  margin-left: 2vw;
+}
+h3{
+
+  margin:3vw;
+  margin-top: 2vw;
+  margin-right: 5vw;
+  font-size: 2.5vw;
+}
+#intro{
+  color: $blue-text;
+}
+
+#about-card{
+  justify-content: flex-start;
+  flex-flow: column;
+}
+
+#about{
+  width:100%;
+}
+
+h4{
+  color: $blue-text;
+  font-size: 5vw;
+  margin-left:5vw;
+  padding:0;
+}
+
+table{
+  margin-left:3vw;
+  font-size: 2vw;
+  margin-top: 3vw;
+
+}
+
+td{
+  padding: .5vw;
+}
+#resume{
+  display: flex;
+  justify-content: center;
+  padding: 3vw;
+  padding-top:5vw;
+}
+#resume-button{
+  font-size: 2vw;
+ }
+
+.short-history{
+  margin: 1vw;
+  padding:2vw;
+ margin-right:5vw;
+ padding-top: 7vw;
+  padding-bottom: 7vw;
+  background-color: $bg-color;
+
+}
+.n-font{
+  font-size: 1.5vw;
+  text-align:justify;
+}
+
+.n-font2{
+  font-size: 1.2vw;
+  text-align:justify;
+}
+
+._skills{
+  margin:1vw;
+  padding:1vw;
+  padding-top: 2vw;
+}
+#skills{
+  display:flex;
+  flex-direction: column;
+}
+
+#skills2{
+  display:flex;
+}
+
+.li-font{
+  margin-left: 3vw;
+  font-size: 3vw;
+}
+
+#skills3{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start ;
+}
+#skills4{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start ;
+}
+ li{
+   font-size:2.5vw;
+ }
+
+ #education{
+   display:flex;
+   flex-direction: column;
+   justify-content: flex-start;
+ }
+
+ #ed{
+   padding:4vw;
+   padding-top: 5vw;
+ }
+
+ #employ{
+   display:flex;
+   flex-direction: column;
+   justify-content: flex-start;
+ }
+ .n-font-employ{
+   margin-left: 10vw;
+   margin-right: 10vw;
+   font-size: 1.75vw;
+   text-align:justify;
+ }
